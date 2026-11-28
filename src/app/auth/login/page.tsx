@@ -27,7 +27,7 @@ export default function LoginPage() {
         }
 
         console.log("Login submitted:", formData);
-        router.push("/");
+        router.push("/dashboard");
     };
 
     const isFormValid = formData.email && formData.password;
@@ -58,7 +58,7 @@ export default function LoginPage() {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        placeholder="YourEmail@gmail.com"
+                                        placeholder="Email@gmail.com"
                                         required
                                         className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-2xl text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-sm shadow-sm"
                                     />
